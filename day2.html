@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<h2>Day 2</h2>
+<h2>1.What is box-sizing</h2>
+<p>Box-sizing property defines how the width and height gets applied on the element.<br>
+Default value is content-box.</p>
+
+<h2>2.What is Animation Delay</h2>
+<p>It defines how the animation has to wait before starting.<br>Using animation delay property,you define the delay by specifying numbers of seconds or milliseconds,it should take before playing.</p>
+
+<h2>3.write a code to show any animation example</h2>
+<p>HTML:-<br>
+
+div(open)   /div(close)<br>
+
+CSS:-<br>
+
+div {<br>
+width: 100px;<br>
+ 
+height: 100px;<br>
+background: red;<br>
+position: relative;<br>
+animation: moving 5s infinite; animation-delay: 3s;<br>
+}<br>
+
+
+@keyframes moving { <br>from {left: 0px;} to {left: 200px;<br>}<br>
+}
+</p>
+
+<h2>4.What are grid-template-columns used for?</h2>
+<p>Grid-template-columns property defines how many columns should be there in a grid-container. <br>The number of columns is determined by the number of values defined in the space-separated list. It takes values in px, % and fraction (fr).</p>
+
+<h2>5.Which property will you use to merge cells verticallyin a grid?</h2>
+<p>grid-column-start and grid-column-end property can be used to merge cells vertically.<br> It also has a shorthand i.e., grid-column: start/end. <br>If you want to merge two elements in row then we will have to use grid-row property inside the child element.<br> Remember these properties are applicable only to child elements not to parent elements.</p>
+
+<h2>6.Which property will you use to merge cells horizontally in a grid?</h2>
+<p>grid-row-start and grid-row-end property can be used to merge cells horizontally. <br>It also has a shorthand i.e., grid-row: grid-row-start/grid-row-end;</p>
+
+<h2>7.What is the difference between display none and visibility hidden</h2>
+<p>display: none-●	The display: none property is used to hide elements without deleting them. It does not take up any space.<br>
+●	In this case, the tag is removed from the page, which allows other elements to fill in.<br>
+visibility: hidden-
+
+●	The visibility: hidden property also hides an element, but affects the layout i.e., it takes up the space.<br>
+●	The element is hidden from view but not the page flow.
+
+
+</p>
+
+
+
+
+</body>
+</html>

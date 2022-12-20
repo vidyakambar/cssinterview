@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<h2>Day 5</h2>
+<h2>1.Show implementation of CSS transitions.</h2>
+<p>div {<br>
+width: 100px; <br>
+height: 100px;<br>
+background: lightblue;<br>
+transition-property: width;<br>
+ 
+transition-duration: 2s;<br>
+transition-timing-function: linear; <br>
+transition-delay: 1s;<br>
+}<br>
+
+ div: hover{<br>
+width: 300px;<br>
+}
+</p>
+
+<h2>2.Show implementation of CSS transform.</h2>
+<p>@keyframes translating {<br>
+0% {<br>
+transform: translate (0, 0);<br>
+}<br>
+
+25% {<br>
+transform: translate (240px, 0);<br>
+}<br>
+
+50% {<br>
+transform: translate (240px, 140px);<br>
+}<br>
+
+75% {<br>
+transform: translate (0, 140px);<br>
+ 
+}<br>
+
+100% {<br>
+transform: translate (0, 0);<br>
+}<br>
+}<br>
+
+p {<br>
+animation: translating 4s linear infinite;<br>
+}<br>
+
+</p>
+<h2>3.Show implementation of Grid. </h2>
+<p>HTML:-
+<div class="container">
+<div class="item item-1">1</div>
+<div class="item item-2">2</div>
+<div class="item item-3">3</div>
+<div class="item item-4">4</div>
+<div class="item item-5">5</div>
+<div class="item item-6">6</div>
+</div>
+
+CSS:-<br>
+.container {<br>
+display: grid;<br>
+grid-template-columns: 200px 50px 100px; <br>
+grid-template-rows: 50px 50px;<br>
+grid-gap: 5px;<br>
+text-align: center;<br>
+justify-content: center;<br>
+}<br>
+
+
+.item{<br>
+background-color: aqua; <br>
+border: 1px solid gray;<br>
+
+}<br>
+.item1 {<br>
+grid-column-start: 1;<br>
+grid-column-end: 3;<br>
+}
+ 
+.item3 {<br>
+grid-row-start: 2;<br>
+grid-row-end: 4;<br>
+}<br>
+
+
+.item4 {<br>
+grid-column-start: 2;<br>
+grid-column-end: 4;<br>
+}<br>
+</p>
+
+<h2>4.What are CSS Combinators?</h2>
+<p>Combinators combine the selectors to provide them a useful relationship and the position of content in the document. <br>This comes in handy when you want to style certain elements all at once rather than styling elements individually.<br>CSS combinator selectors are as follows.<br>
+	1.	Descendant Selector (space)<br>
+2.	Child Selector (>)<br>
+3.	Adjacent Sibling Selector (+)<br>
+4.	General Sibling Selector (~)<br>
+
+</p>
+
+<h2>5.What are CSS Pseudo Selectors?</h2>
+<p>CSS pseudo-classes are used to add styles to selectors, but only when those selectors meet certain conditions. <br>A pseudo class is expressed by adding a colon (:) after a selector in CSS, <br>followed by a pseudo-class such as "hover", "focus", or "active", like this:</p>
+
+
+</body>
+</html>
